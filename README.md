@@ -1,40 +1,77 @@
-# Welcome to Remix!
+# DocPET - Document Processing and Editing Tool
 
-- 📖 [Remix docs](https://remix.run/docs)
+DocPET is a minimalistic web application for Microsoft Word document handling and creation, designed specifically for notary workers. It provides a secure environment for creating, importing, and editing various document types like deeds and certificates.
 
-## Development
+## Features
 
-Run the dev server:
+- **Secure Authentication**: User login and session management for secure access
+- **Document Management**: Create, import, and edit various document types
+- **Template System**: Use templates with repetitive fields for efficient document creation
+- **Form-Based Document Creation**: Fill in forms to generate documents with known values
+- **Seamless MS Word Integration**: Easy transition between the web app and local MS Word
 
-```shellscript
-npm run dev
-```
+## Getting Started
 
-## Deployment
+### Prerequisites
 
-First, build your app for production:
+- Node.js (v20 or higher)
+- npm or yarn
 
-```sh
-npm run build
-```
+### Installation
 
-Then run the app in production mode:
+1. Clone the repository:
 
-```sh
-npm start
-```
+   ```bash
+   git clone https://github.com/yourusername/docpet.git
+   cd docpet
+   ```
 
-Now you'll need to pick a host to deploy it to.
+2. Install dependencies:
 
-### DIY
+   ```bash
+   npm install
+   ```
 
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+3. Start the development server:
 
-Make sure to deploy the output of `npm run build`
+   ```bash
+   npm run dev
+   ```
 
-- `build/server`
-- `build/client`
+4. Open your browser and navigate to `http://localhost:3000`
 
-## Styling
+## Project Structure
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+- `app/` - Main application code
+  - `routes/` - Application routes
+  - `models/` - Data models
+  - `utils/` - Utility functions
+  - `db/` - Database setup
+  - `styles/` - CSS styles
+
+## Authentication
+
+The application uses a secure authentication system with:
+
+- Password hashing with bcrypt
+- Session management with cookies
+- Protected routes that require authentication
+
+## Document Handling
+
+DocPET supports:
+
+- Creating new documents from templates
+- Importing existing documents
+- Editing documents with a form-based interface
+- Exporting documents for use in MS Word
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Built with [Remix](https://remix.run/)
+- Styled with [Tailwind CSS](https://tailwindcss.com/)
+- Document handling with [docx](https://github.com/dolanmiu/docx) and [docxtemplater](https://github.com/edi9999/docxtemplater)
