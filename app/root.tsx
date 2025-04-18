@@ -9,8 +9,7 @@ import {
 } from "@remix-run/react";
 import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
 import { json, redirect } from "@remix-run/node";
-import styles from "./styles/tailwind.css";
-import "./tailwind.css";
+import styles from "./tailwind.css?url";
 import { getUser } from "./utils/session.server";
 
 export const links: LinksFunction = () => [
