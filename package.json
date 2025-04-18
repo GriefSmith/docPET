@@ -16,6 +16,7 @@
     "@remix-run/react": "^2.16.5",
     "@remix-run/serve": "^2.16.5",
     "@types/better-sqlite3": "^7.6.13",
+    "@types/uuid": "^10.0.0",
     "bcryptjs": "^3.0.2",
     "better-sqlite3": "^11.9.1",
     "docx": "^9.3.0",
@@ -28,6 +29,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.55.0",
+    "uuid": "^11.1.0",
     "zod": "^3.24.2"
   },
   "devDependencies": {
